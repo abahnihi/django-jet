@@ -13,7 +13,7 @@ DEBUG_PROPAGATE_EXCEPTIONS = True
 ROOT_URLCONF = 'jet.tests.urls'
 
 INSTALLED_APPS = (
-    'jet.dashboard',
+    'jet.jet_dashboard',
     'jet',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -11,7 +11,7 @@ LinkList
 .. image:: _static/dashboard_module_link_list.png
     :width: 100%
 
-.. autoclass:: jet.dashboard.modules.LinkList
+.. autoclass:: jet.jet_dashboard.modules.LinkList
    :members:
 
 AppList
@@ -20,7 +20,7 @@ AppList
 .. image:: _static/dashboard_module_app_list.png
     :width: 100%
 
-.. autoclass:: jet.dashboard.modules.AppList
+.. autoclass:: jet.jet_dashboard.modules.AppList
    :members:
 
 ModelList
@@ -29,7 +29,7 @@ ModelList
 .. image:: _static/dashboard_module_model_list.png
     :width: 100%
 
-.. autoclass:: jet.dashboard.modules.ModelList
+.. autoclass:: jet.jet_dashboard.modules.ModelList
    :members:
 
 RecentActions
@@ -38,7 +38,7 @@ RecentActions
 .. image:: _static/dashboard_module_recent_actions.png
     :width: 100%
 
-.. autoclass:: jet.dashboard.modules.RecentActions
+.. autoclass:: jet.jet_dashboard.modules.RecentActions
    :members:
 
 Feed
@@ -47,7 +47,7 @@ Feed
 .. image:: _static/dashboard_module_feed.png
     :width: 100%
 
-.. autoclass:: jet.dashboard.modules.Feed
+.. autoclass:: jet.jet_dashboard.modules.Feed
    :members:
 
 Google Analytics Widgets
@@ -78,7 +78,7 @@ Extra Installation
 
 .. code::
 
-   from jet.dashboard.dashboard_modules import google_analytics_views
+   from jet.jet_dashboard.dashboard_modules import google_analytics_views
 
 
 Usage Example
@@ -86,8 +86,8 @@ Usage Example
    .. code-block:: python
 
      from django.utils.translation import ugettext_lazy as _
-     from jet.dashboard.dashboard import Dashboard, AppIndexDashboard
-     from jet.dashboard.dashboard_modules import google_analytics
+     from jet.jet_dashboard.dashboard import Dashboard, AppIndexDashboard
+     from jet.jet_dashboard.dashboard_modules import google_analytics
 
 
      class CustomIndexDashboard(Dashboard):
@@ -98,13 +98,13 @@ Usage Example
             self.available_children.append(google_analytics.GoogleAnalyticsVisitorsChart)
             self.available_children.append(google_analytics.GoogleAnalyticsPeriodVisitors)
 
-.. autoclass:: jet.dashboard.dashboard_modules.google_analytics.GoogleAnalyticsVisitorsTotals
+.. autoclass:: jet.jet_dashboard.dashboard_modules.google_analytics.GoogleAnalyticsVisitorsTotals
    :members:
 
-.. autoclass:: jet.dashboard.dashboard_modules.google_analytics.GoogleAnalyticsVisitorsChart
+.. autoclass:: jet.jet_dashboard.dashboard_modules.google_analytics.GoogleAnalyticsVisitorsChart
    :members:
 
-.. autoclass:: jet.dashboard.dashboard_modules.google_analytics.GoogleAnalyticsPeriodVisitors
+.. autoclass:: jet.jet_dashboard.dashboard_modules.google_analytics.GoogleAnalyticsPeriodVisitors
    :members:
 
 Yandex Metrika Widgets
@@ -130,7 +130,7 @@ Extra Installation
 
 .. code::
 
-   from jet.dashboard.dashboard_modules import yandex_metrika_views
+   from jet.jet_dashboard.dashboard_modules import yandex_metrika_views
 
 
 Usage Example
@@ -138,8 +138,8 @@ Usage Example
    .. code-block:: python
 
      from django.utils.translation import ugettext_lazy as _
-     from jet.dashboard.dashboard import Dashboard, AppIndexDashboard
-     from jet.dashboard.dashboard_modules import yandex_metrika
+     from jet.jet_dashboard.dashboard import Dashboard, AppIndexDashboard
+     from jet.jet_dashboard.dashboard_modules import yandex_metrika
 
 
      class CustomIndexDashboard(Dashboard):
@@ -150,11 +150,11 @@ Usage Example
             self.available_children.append(yandex_metrika.YandexMetrikaVisitorsChart)
             self.available_children.append(yandex_metrika.YandexMetrikaPeriodVisitors)
 
-.. autoclass:: jet.dashboard.dashboard_modules.yandex_metrika.YandexMetrikaVisitorsTotals
+.. autoclass:: jet.jet_dashboard.dashboard_modules.yandex_metrika.YandexMetrikaVisitorsTotals
    :members:
 
-.. autoclass:: jet.dashboard.dashboard_modules.yandex_metrika.YandexMetrikaVisitorsChart
+.. autoclass:: jet.jet_dashboard.dashboard_modules.yandex_metrika.YandexMetrikaVisitorsChart
    :members:
 
-.. autoclass:: jet.dashboard.dashboard_modules.yandex_metrika.YandexMetrikaPeriodVisitors
+.. autoclass:: jet.jet_dashboard.dashboard_modules.yandex_metrika.YandexMetrikaPeriodVisitors
    :members:

@@ -9,7 +9,7 @@ This page describes the API of the dashboard and dashboard modules.
 Dashboard
 ---------
 
-.. autoclass:: jet.dashboard.dashboard.Dashboard
+.. autoclass:: jet.jet_dashboard.dashboard.Dashboard
    :members:
 
 .. _Dashboard Module:
@@ -17,5 +17,5 @@ Dashboard
 DashboardModule
 ---------------
 
-.. autoclass:: jet.dashboard.modules.DashboardModule
+.. autoclass:: jet.jet_dashboard.modules.DashboardModule
    :members:

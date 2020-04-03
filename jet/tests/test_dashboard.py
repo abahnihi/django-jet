@@ -5,9 +5,9 @@ except ImportError: # Django 1.11
     from django.urls import reverse
 
 from django.test import TestCase, Client
-from jet.dashboard.dashboard import Dashboard
-from jet.dashboard.modules import LinkList, RecentActions
-from jet.dashboard.models import UserDashboardModule
+from jet.jet_dashboard.dashboard import Dashboard
+from jet.jet_dashboard.modules import LinkList, RecentActions
+from jet.jet_dashboard.models import UserDashboardModule
 from jet.tests.dashboard import TestIndexDashboard
 
 
@@ -31,7 +31,7 @@ class DashboardTestCase(TestCase):
     def _init_dashboard(self):
         UserDashboardModule.objects.create(
             title='',
-            module='jet.dashboard.modules.LinkList',
+            module='jet.jet_dashboard.modules.LinkList',
             app_label=None,
             user=self.admin_user.pk,
             column=0,
@@ -39,7 +39,7 @@ class DashboardTestCase(TestCase):
         )
         UserDashboardModule.objects.create(
             title='',
-            module='jet.dashboard.modules.RecentActions',
+            module='jet.jet_dashboard.modules.RecentActions',
             app_label=None,
             user=self.admin_user.pk,
             column=0,

@@ -128,8 +128,8 @@ Building produces the following files:
 
   * jet/locale/LOCALE/LC_MESSAGES/django.mo
   * jet/locale/LOCALE/LC_MESSAGES/djangojs.mo
-  * jet/dashboard/locale/LOCALE/LC_MESSAGES/django.mo
-  * jet/dashboard/locale/LOCALE/LC_MESSAGES/djangojs.mo
+  * jet/jet_dashboard/locale/LOCALE/LC_MESSAGES/django.mo
+  * jet/jet_dashboard/locale/LOCALE/LC_MESSAGES/djangojs.mo
 
 You should commit generated build files together with sources.
 

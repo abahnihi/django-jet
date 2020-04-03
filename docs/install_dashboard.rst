@@ -6,13 +6,13 @@ Dashboard Installation
     Dashboard is located into a separate application. So after a typical JET installation it won't be active.
     To enable dashboard application follow these steps:
 
-* Add 'jet.dashboard' application to the INSTALLED_APPS setting of your Django project settings.py file (note it should be before 'jet'):
+* Add 'jet.jet_dashboard' application to the INSTALLED_APPS setting of your Django project settings.py file (note it should be before 'jet'):
 
 .. code:: python
 
     INSTALLED_APPS = (
         ...
-        'jet.dashboard',
+        'jet.jet_dashboard',
         'jet',
         'django.contrib.admin',
         ...
@@ -25,7 +25,7 @@ Dashboard Installation
     urlpatterns = patterns(
         '',
         url(r'^jet/', include('jet.urls', 'jet')),  # Django JET URLS
-        url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
+        url(r'^jet/jet_dashboard/', include('jet.jet_dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
         url(r'^admin/', include(admin.site.urls)),
         ...
     )

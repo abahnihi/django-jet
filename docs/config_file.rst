@@ -225,7 +225,7 @@ your own dashboard with custom modules and pre-installed layout.
 
 .. code:: python
 
-    JET_INDEX_DASHBOARD = 'jet.dashboard.dashboard.DefaultIndexDashboard'
+    JET_INDEX_DASHBOARD = 'jet.jet_dashboard.dashboard.DefaultIndexDashboard'
 
 JET_APP_INDEX_DASHBOARD
 -----------------------
@@ -234,5 +234,5 @@ Same as **JET_INDEX_DASHBOARD**, but for application pages
 
 .. code:: python
 
-    JET_APP_INDEX_DASHBOARD = 'jet.dashboard.dashboard.DefaultAppIndexDashboard'
+    JET_APP_INDEX_DASHBOARD = 'jet.jet_dashboard.dashboard.DefaultAppIndexDashboard'
 

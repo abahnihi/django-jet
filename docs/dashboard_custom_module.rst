@@ -9,8 +9,8 @@ In order create your own dashboard module you need to follow these steps:
 * Create module template
 * *(optional) Add module views*
 
-Also you can always see build-in modules as examples in ``jet/dashboard/modules.py`` file and
-``jet/dashboard/dashboard_modules/`` directory on the repository.
+Also you can always see build-in modules as examples in ``jet/jet_dashboard/modules.py`` file and
+``jet/jet_dashboard/dashboard_modules/`` directory on the repository.
 
 Inherit Dashboard Module
 ------------------------
@@ -26,7 +26,7 @@ Example of ``dashboard_modules.py``:
 
     .. code-block:: python
 
-        from jet.dashboard.modules import DashboardModule
+        from jet.jet_dashboard.modules import DashboardModule
         from contact.models import Ticket
 
 
@@ -54,7 +54,7 @@ Example of ``LinkList`` dashboard module which has custom settings and editable 
 
         class LinkList(DashboardModule):
             title = 'Links'
-            template = 'jet.dashboard/modules/link_list.html'
+            template = 'jet.jet_dashboard/modules/link_list.html'
             layout = 'stacked'
             children = []
             settings_form = LinkListSettingsForm
@@ -143,7 +143,7 @@ in ``dashboard_modules_views.py`` file inside your application:
         from django.conf.urls import url
         from django.contrib import messages
         from django.shortcuts import redirect
-        from jet.dashboard import dashboard
+        from jet.jet_dashboard import dashboard
         from core.utils.utils import DatabaseManager
 
 
@@ -178,7 +178,7 @@ You should import this file before dashboard urls have been imported in you main
         urlpatterns = [
             url(r'^admin/', include(admin.site.urls)),
             url(r'^jet/', include('jet.urls', 'jet')),
-            url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
+            url(r'^jet/jet_dashboard/', include('jet.jet_dashboard.urls', 'jet-dashboard')),
             ...
         ]
 

@@ -8,7 +8,7 @@ Custom Dashboard
    change python imports and remove extending in modules templates.
 
 Dashboard represents ``Dashboard`` class instance with ``DashboardModule`` class instances as its children.
-Any custom **Dashboard** class should inherit ``jet.dashboard.dashboard.Dashboard``
+Any custom **Dashboard** class should inherit ``jet.jet_dashboard.dashboard.Dashboard``
 and use ``init_with_context`` to fill it with widgets. You should add your widgets
 to ``children`` and ``available_children`` attributes.
 
@@ -22,8 +22,8 @@ Set Up Custom Dashboard
    .. code-block:: python
 
       from django.utils.translation import ugettext_lazy as _
-      from jet.dashboard import modules
-      from jet.dashboard.dashboard import Dashboard, AppIndexDashboard
+      from jet.jet_dashboard import modules
+      from jet.jet_dashboard.dashboard import Dashboard, AppIndexDashboard
 
 
       class CustomIndexDashboard(Dashboard):

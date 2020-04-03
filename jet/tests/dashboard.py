@@ -1,5 +1,5 @@
-from jet.dashboard import modules
-from jet.dashboard.dashboard import Dashboard
+from jet.jet_dashboard import modules
+from jet.jet_dashboard.dashboard import Dashboard
 
 
 class TestIndexDashboard(Dashboard):

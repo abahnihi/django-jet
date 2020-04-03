@@ -6,9 +6,9 @@ except ImportError: # Django 1.11
     from django.urls import reverse
 
 from django.test import TestCase, Client
-from jet.dashboard.modules import LinkList
+from jet.jet_dashboard.modules import LinkList
 from jet.models import Bookmark
-from jet.dashboard.models import UserDashboardModule
+from jet.jet_dashboard.models import UserDashboardModule
 
 
 class ViewsTestCase(TestCase):
@@ -29,7 +29,7 @@ class ViewsTestCase(TestCase):
         new_layout = 'stacked'
         module = UserDashboardModule.objects.create(
             title=title,
-            module='jet.dashboard.modules.LinkList',
+            module='jet.jet_dashboard.modules.LinkList',
             app_label=None,
             user=self.admin_user.pk,
             column=0,
@@ -120,7 +120,7 @@ class ViewsTestCase(TestCase):
         app_label = None
         module_0 = UserDashboardModule.objects.create(
             title='',
-            module='jet.dashboard.modules.LinkList',
+            module='jet.jet_dashboard.modules.LinkList',
             app_label=app_label,
             user=self.admin_user.pk,
             column=0,
@@ -128,7 +128,7 @@ class ViewsTestCase(TestCase):
         )
         module_1 = UserDashboardModule.objects.create(
             title='',
-            module='jet.dashboard.modules.LinkList',
+            module='jet.jet_dashboard.modules.LinkList',
             app_label=app_label,
             user=self.admin_user.pk,
             column=0,
@@ -188,7 +188,7 @@ class ViewsTestCase(TestCase):
     def test_update_dashboard_module_collapse_view(self):
         module = UserDashboardModule.objects.create(
             title='',
-            module='jet.dashboard.modules.LinkList',
+            module='jet.jet_dashboard.modules.LinkList',
             app_label=None,
             user=self.admin_user.pk,
             column=0,
@@ -216,7 +216,7 @@ class ViewsTestCase(TestCase):
     def test_remove_dashboard_module_view(self):
         module = UserDashboardModule.objects.create(
             title='',
-            module='jet.dashboard.modules.LinkList',
+            module='jet.jet_dashboard.modules.LinkList',
             app_label=None,
             user=self.admin_user.pk,
             column=0,
