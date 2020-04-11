@@ -1,11 +1,12 @@
 require('es6-promise').polyfill();
 
+
 var gulp = require('gulp'),
     browserify = require('browserify'),
     concatCss = require('gulp-concat-css'),
     cleanCSS = require('gulp-clean-css'),
     sass = require('gulp-sass'),
-    uglify = require('gulp-uglify'),
+//    uglify = require('gulp-uglify'),
     buffer = require('vinyl-buffer'),
     source = require('vinyl-source-stream'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -33,8 +34,9 @@ gulp.task('scripts', function() {
         })
         .pipe(source('bundle.min.js'))
         .pipe(buffer())
-        .pipe(uglify())
+//        .pipe(uglify())
         .pipe(gulp.dest('./jet/static/jet/js/build/'));
+
 });
 
 gulp.task('styles', function() {
