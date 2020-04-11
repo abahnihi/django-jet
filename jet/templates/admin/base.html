@@ -27,9 +27,8 @@
     var DATETIME_FORMAT = "{{ datetime_format }}";
 </script>
 <script type="text/javascript" src="{% url 'jet:jsi18n' %}"></script>
-<!--<script src="{% static 'admin/js/vendor/jquery/jquery.min.js' %}"></script>-->
-<!--<script src="{% static 'admin/js/jquery.init.js' %}"></script>-->
-<!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>-->
+<script src="{% static 'admin/js/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'admin/js/jquery.init.js' %}"></script>
 <script src="{% static 'jet/js/build/bundle.min.js' as url %}{{ url|jet_append_version }}"></script>
 
 {% jet_static_translation_urls as translation_urls %}
